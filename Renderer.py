@@ -22,8 +22,8 @@ from ursina import Entity, Texture, mouse
 EFF_WIDTH = 600
 EFF_HEIGHT = 338
 
-WIN_WIDTH = 1000
-WIN_HEIGHT = 563
+WIN_WIDTH = 1200
+WIN_HEIGHT = 675
 
 FOV = 9 ## Ursina distinguishes between "World scale" and "Screen scale". FOV of 9 just makes
 ## sure that our "img" is rendered on the full window Width and Height
