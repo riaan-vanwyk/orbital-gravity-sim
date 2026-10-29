@@ -44,7 +44,7 @@ def build_environment():
     # 3. Execute commands directly using the .venv binaries
     for item in to_install:
         subprocess.run([str(pip_bin), "install", item], check=True)
-    print(f"[✓] All packages installed successfully. (Use python \"app.py --run\" to run)")
+    print(f"[✓] All packages installed successfully. (Use \"python app.py --run\" to run)")
 
 def build():
     check_python_version()
