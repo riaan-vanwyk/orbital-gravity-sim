@@ -1,3 +1,4 @@
+import os
 from PIL import Image
 import numpy as np
 from ursina import Entity, Texture, mouse
@@ -52,7 +53,7 @@ def NewScreen():
 def ClearBuff():
     ## Maak die hele framebuffer swart
     framebuffer.fill(0)
-    
+
 
 
 def DrawPixelInBuff(x, y, color):
@@ -148,7 +149,13 @@ def YCoordToScreen(Py):
 # This means the entire font image is 144x144 pixels.
 # ============================================================
 
-FontImage = Image.open("font.png").convert("RGB")
+# Gets the folder where this specific Python script is located
+ScriptDir = os.path.dirname(os.path.abspath(__file__))
+
+# Joins the folder path with your file name
+ImagePath = os.path.join(ScriptDir, "font.png")
+
+FontImage = Image.open(ImagePath).convert("RGB")
 
 # Store the width so we don't have to repeatedly access
 # FontImage.width while reading individual pixels.
