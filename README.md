@@ -1,6 +1,6 @@
 # GraviSim: 2D Orbital Gravity Simulator
 
-Presentation: [📄 View Full Presentation](https://riaanvanwyk.onrender.com/p.html?GraviSim_Presentation.html)
+Presentation: [📄 View Full Presentation](https://riaanvanwyk.vercel.app/p.html?GraviSim_Presentation.html)
 <br><br>
 ![Python Version](https://img.shields.io/badge/python-3.12%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
